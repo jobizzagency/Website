@@ -1,7 +1,8 @@
 /* ═══════════════════════════════════════
    CONTACT.JS — Formulaire de contact
-   Utilise FormSubmit.co pour envoyer
-   les emails directement depuis le site
+   Utilise Web3Forms pour envoyer les
+   emails directement depuis le site
+   Clé API → champ hidden access_key
 ═══════════════════════════════════════ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -42,18 +43,30 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         try {
-            // Send via FormSubmit.co AJAX
-            const formData = new FormData(form);
+            // Build JSON payload
+            const payload = {
+                access_key: form.querySelector('[name="access_key"]').value,
+                name: name,
+                email: email,
+                phone: phone || 'Non renseigné',
+                formule: need || 'Non précisé',
+                message: message,
+                subject: 'Nouvelle demande de devis — JoBizz Agency',
+                from_name: 'JoBizz Agency Website'
+            };
 
-            const response = await fetch(form.action, {
+            const response = await fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
-                body: formData,
                 headers: {
+                    'Content-Type': 'application/json',
                     'Accept': 'application/json'
-                }
+                },
+                body: JSON.stringify(payload)
             });
 
-            if (response.ok) {
+            const result = await response.json();
+
+            if (result.success) {
                 // Show success
                 if (success) {
                     success.classList.add('visible');
