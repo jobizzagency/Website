@@ -1,0 +1,86 @@
+/* ═══════════════════════════════════════
+   FAQ.CSS — Section questions fréquentes
+   Ajouter une question → copier .faq-item dans index.html
+   Le JS détecte automatiquement les .faq-item
+═══════════════════════════════════════ */
+
+#faq {
+    padding: var(--section-pad);
+    background: var(--dark);
+}
+
+.faq-header {
+    margin-bottom: 3rem;
+}
+
+.faq-list {
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--gold-border);
+}
+
+.faq-item:first-child {
+    border-top: 1px solid var(--gold-border);
+}
+
+.faq-q {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.4rem 0;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: none;
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--white);
+    transition: color var(--transition);
+}
+
+.faq-q:hover {
+    color: var(--gold);
+}
+
+.faq-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1.2rem;
+    color: var(--gold);
+    transition: transform 0.3s ease;
+    font-style: normal;
+}
+
+.faq-item.open .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.faq-a-inner {
+    padding: 0 0 1.4rem;
+    font-size: 0.95rem;
+    color: var(--grey-light);
+    line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+    .faq-q {
+        font-size: 1.05rem;
+        cursor: pointer;
+    }
+}

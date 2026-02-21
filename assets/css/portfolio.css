@@ -1,0 +1,398 @@
+/* ═══════════════════════════════════════
+   PORTFOLIO.CSS — Grille projets
+   Ajouter un projet → copier une .project-card
+   Modifier les mockups CSS → .mock-* classes
+═══════════════════════════════════════ */
+
+#portfolio {
+    padding: var(--section-pad);
+    background: var(--dark);
+}
+
+.portfolio-header {
+    margin-bottom: 3rem;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/* Card */
+.project-card {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    transition: all var(--transition);
+    cursor: none;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    border-color: var(--gold-border);
+}
+
+/* Mockup base */
+.project-mockup {
+    position: absolute;
+    inset: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Overlay on hover */
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(8, 8, 8, 0.95) 0%, rgba(8, 8, 8, 0.3) 50%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: opacity var(--transition);
+}
+
+.project-card:hover .project-overlay,
+.project-card.hovered .project-overlay {
+    opacity: 1;
+}
+
+.project-cat {
+    font-size: 0.72rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+.project-name {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.6rem;
+}
+
+.project-link {
+    font-size: 0.85rem;
+    color: var(--gold);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: gap var(--transition);
+}
+
+.project-card:hover .project-link {
+    gap: 0.6rem;
+}
+
+/* ═══ CSS Mockups ═══════════════════════ */
+
+/* Docu-Genie — dark SaaS / IA violet/indigo */
+.mock-docugenie {
+    background: #0d0b1a;
+    display: flex;
+    flex-direction: column;
+}
+
+.mock-docugenie .mock-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.mock-docugenie .mock-logo {
+    width: 50px;
+    height: 8px;
+    background: linear-gradient(90deg, #8b5cf6, #6366f1);
+    border-radius: 4px;
+}
+
+.mock-docugenie .mock-nav-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.mock-docugenie .mock-nav-links span {
+    width: 28px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 2px;
+}
+
+.mock-docugenie .mock-hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    text-align: center;
+    gap: 0.6rem;
+}
+
+.mock-docugenie .mock-badge {
+    width: 40px;
+    height: 6px;
+    background: rgba(139, 92, 246, 0.3);
+    border-radius: 3px;
+}
+
+.mock-docugenie .mock-title {
+    width: 70%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
+.mock-docugenie .mock-subtitle {
+    width: 50%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+}
+
+.mock-docugenie .mock-cards {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 1rem 1rem;
+    justify-content: center;
+}
+
+.mock-docugenie .mock-card {
+    width: 60px;
+    height: 45px;
+    background: rgba(139, 92, 246, 0.1);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.mock-docugenie .mock-card-icon {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+}
+
+.mock-docugenie .mock-card-line {
+    width: 30px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 2px;
+}
+
+/* Fountain Life — light wellness crème/terracotta */
+.mock-fountain {
+    background: #faf5ef;
+    display: flex;
+    flex-direction: column;
+}
+
+.mock-fountain .mock-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid rgba(180, 140, 100, 0.15);
+}
+
+.mock-fountain .mock-logo {
+    width: 50px;
+    height: 8px;
+    background: #c4956a;
+    border-radius: 4px;
+}
+
+.mock-fountain .mock-nav-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.mock-fountain .mock-nav-links span {
+    width: 28px;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.mock-fountain .mock-hero {
+    flex: 1;
+    display: flex;
+    gap: 0.8rem;
+    padding: 1rem;
+}
+
+.mock-fountain .mock-hero-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.mock-fountain .mock-title {
+    width: 80%;
+    height: 8px;
+    background: #3d2e22;
+    border-radius: 4px;
+}
+
+.mock-fountain .mock-subtitle {
+    width: 60%;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+}
+
+.mock-fountain .mock-btn {
+    width: 50px;
+    height: 14px;
+    background: #c4956a;
+    border-radius: 3px;
+    margin-top: 0.3rem;
+}
+
+.mock-fountain .mock-hero-img {
+    flex: 0.8;
+    background: linear-gradient(135deg, #e8d5c0, #c4956a);
+    border-radius: 6px;
+    min-height: 80px;
+}
+
+.mock-fountain .mock-features {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 1rem 1rem;
+}
+
+.mock-fountain .mock-feature {
+    flex: 1;
+    height: 30px;
+    background: rgba(196, 149, 106, 0.08);
+    border: 1px solid rgba(196, 149, 106, 0.12);
+    border-radius: 4px;
+}
+
+/* AprilFord — dark automobile rouge/noir */
+.mock-ford {
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+}
+
+.mock-ford .mock-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid rgba(220, 38, 38, 0.2);
+}
+
+.mock-ford .mock-logo {
+    width: 50px;
+    height: 8px;
+    background: linear-gradient(90deg, #dc2626, #991b1b);
+    border-radius: 4px;
+}
+
+.mock-ford .mock-nav-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.mock-ford .mock-nav-links span {
+    width: 28px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 2px;
+}
+
+.mock-ford .mock-hero {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.2rem;
+    background: linear-gradient(135deg, #1a0505 0%, #0a0a0a 50%, #150505 100%);
+}
+
+.mock-ford .mock-hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 50%;
+    background: linear-gradient(135deg, rgba(220, 38, 38, 0.08), transparent);
+    border-radius: 50%;
+}
+
+.mock-ford .mock-hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    z-index: 1;
+}
+
+.mock-ford .mock-title {
+    width: 100px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+}
+
+.mock-ford .mock-subtitle {
+    width: 70px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 2px;
+}
+
+.mock-ford .mock-btn {
+    width: 55px;
+    height: 14px;
+    background: #dc2626;
+    border-radius: 3px;
+    margin-top: 0.3rem;
+}
+
+.mock-ford .mock-stats {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 1rem 1rem;
+}
+
+.mock-ford .mock-stat {
+    flex: 1;
+    height: 25px;
+    background: rgba(220, 38, 38, 0.06);
+    border: 1px solid rgba(220, 38, 38, 0.15);
+    border-radius: 3px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}

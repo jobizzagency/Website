@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoBizz Agency | Création sites web TPE, Artisans, PME — À partir de 450€</title>
+  <meta name="description"
+    content="JoBizz Agency crée votre site web professionnel à partir de 450€. Livraison rapide, maintenance illimitée, réactivité garantie. Demandez votre devis.">
+  <meta name="keywords"
+    content="création site web, agence web française, site web artisan, site web TPE, site web PME, site web pas cher, site web professionnel">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jobizzagency.github.io/Website/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="JoBizz Agency | Sites web pro à partir de 450€">
+  <meta property="og:description"
+    content="Sites web pour artisans, TPE et PME. Livraison rapide, maintenance illimitée.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Schema.org JSON-LD — LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "JoBizz Agency",
+    "description": "Agence web création de sites professionnels pour TPE, artisans et PME.",
+    "email": "jobizz.agency@gmail.com",
+    "telephone": "+33695379023",
+    "priceRange": "€€",
+    "areaServed": "FR",
+    "offers": [
+      {"@type": "Offer", "name": "Formule Essentiel", "price": "450", "priceCurrency": "EUR"},
+      {"@type": "Offer", "name": "Formule Pro Local", "price": "850", "priceCurrency": "EUR"}
+    ]
+  }
+  </script>
+
+  <!-- Schema.org JSON-LD — FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Combien de temps pour créer mon site ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Entre 3 et 10 jours ouvrés selon la formule."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Que comprend la maintenance illimitée ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Modifications, mises à jour et corrections incluses sans frais."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/stats.css">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+  <link rel="stylesheet" href="assets/css/pricing.css">
+  <link rel="stylesheet" href="assets/css/why.css">
+  <link rel="stylesheet" href="assets/css/testimonials.css">
+  <link rel="stylesheet" href="assets/css/faq.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════ -->
+  <nav aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="JoBizz Agency — Accueil">
+        <!-- Logo SVG inline — Hexagone doré + éclair -->
+        <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="30,3 54,16 54,44 30,57 6,44 6,16" fill="none" stroke="#C9A84C" stroke-width="2.5" />
+          <polygon points="30,8 50,19 50,41 30,52 10,41 10,19" fill="none" stroke="#C9A84C" stroke-width="0.5"
+            opacity="0.3" />
+          <path d="M34,17 L26,30 L32,30 L26,43" fill="none" stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <div class="nav-logo-text">
+          <span class="brand">JoBizz</span>
+          <span class="sub">Agency</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#pricing">Formules</a></li>
+        <li><a href="#why">Notre ADN</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#contact" class="btn-nav">Demander un devis</a>
+      </div>
+
+      <button class="burger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" aria-label="Menu mobile">
+    <a href="#portfolio">Portfolio</a>
+    <a href="#pricing">Formules</a>
+    <a href="#why">Notre ADN</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn-outline" style="margin-top:1rem;">Demander un devis</a>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════════════════
+         HERO
+    ══════════════════════════════════════ -->
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="particles" id="particles"></div>
+
+      <div class="container hero-content">
+        <div class="hero-eyebrow hero-anim-1">Agence web française</div>
+        <div class="hero-line hero-anim-1"></div>
+
+        <h1 class="hero-title hero-anim-2">
+          Votre site web <span class="gold">professionnel</span>, livré rapidement, au meilleur prix.
+        </h1>
+
+        <p class="hero-sub hero-anim-3">
+          JoBizz Agency crée des sites web modernes pour artisans, TPE et professions libérales. Prix transparents,
+          maintenance illimitée, réactivité garantie.
+        </p>
+
+        <div class="hero-ctas hero-anim-4">
+          <a href="#pricing" class="btn-primary">Voir nos formules</a>
+          <a href="#contact" class="btn-outline">Demander un devis <span>→</span></a>
+        </div>
+
+        <div class="hero-badges hero-anim-5">
+          <span class="badge"><span class="badge-dot"></span>Prix imbattables</span>
+          <span class="badge"><span class="badge-dot"></span>Livraison rapide</span>
+          <span class="badge"><span class="badge-dot"></span>Maintenance illimitée</span>
+          <span class="badge"><span class="badge-dot"></span>Réactivité 24h</span>
+          <span class="badge"><span class="badge-dot"></span>100% français</span>
+        </div>
+      </div>
+
+      <div class="scroll-hint hero-anim-5">
+        <span class="scroll-label">Scroll</span>
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         STATS
+    ══════════════════════════════════════ -->
+    <section id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <div class="stat-num" data-target="450" data-prefix="Dès " data-suffix="€">0</div>
+            <div class="stat-label">Tarif d'entrée</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-1">
+            <div class="stat-num" data-target="7" data-prefix="< " data-suffix=" jours">0</div>
+            <div class="stat-label">Délai de livraison moyen</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <div class="stat-num" data-suffix="∞ Illimitée">∞</div>
+            <div class="stat-label">Maintenance incluse</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <div class="stat-num" data-target="24" data-suffix="h">0</div>
+            <div class="stat-label">Délai de réponse garanti</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         PORTFOLIO
+    ══════════════════════════════════════ -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="portfolio-header reveal">
+          <span class="section-label">Portfolio</span>
+          <h2>Des sites web qui convertissent — <span class="gold italic">Nos projets récents</span></h2>
+        </div>
+
+        <div class="portfolio-grid">
+
+          <!-- Docu-Genie -->
+          <article class="project-card reveal">
+            <div class="project-mockup mock-docugenie">
+              <div class="mock-nav">
+                <div class="mock-logo"></div>
+                <div class="mock-nav-links"><span></span><span></span><span></span></div>
+              </div>
+              <div class="mock-hero">
+                <div class="mock-badge"></div>
+                <div class="mock-title"></div>
+                <div class="mock-subtitle"></div>
+              </div>
+              <div class="mock-cards">
+                <div class="mock-card">
+                  <div class="mock-card-icon"></div>
+                  <div class="mock-card-line"></div>
+                </div>
+                <div class="mock-card">
+                  <div class="mock-card-icon"></div>
+                  <div class="mock-card-line"></div>
+                </div>
+                <div class="mock-card">
+                  <div class="mock-card-icon"></div>
+                  <div class="mock-card-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <span class="project-cat">SaaS / Intelligence Artificielle</span>
+              <h3 class="project-name">docu-genie.com</h3>
+              <a href="https://www.docu-genie.com/" class="project-link">Voir le site <span>→</span></a>
+            </div>
+          </article>
+
+          <!-- Fountain Life -->
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-mockup mock-fountain">
+              <div class="mock-nav">
+                <div class="mock-logo"></div>
+                <div class="mock-nav-links"><span></span><span></span><span></span></div>
+              </div>
+              <div class="mock-hero">
+                <div class="mock-hero-text">
+                  <div class="mock-title"></div>
+                  <div class="mock-subtitle"></div>
+                  <div class="mock-btn"></div>
+                </div>
+                <div class="mock-hero-img"></div>
+              </div>
+              <div class="mock-features">
+                <div class="mock-feature"></div>
+                <div class="mock-feature"></div>
+                <div class="mock-feature"></div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <span class="project-cat">Bien-être &amp; Santé</span>
+              <h3 class="project-name">fountainlife.com</h3>
+              <a href="https://www.fountainlife.com/" class="project-link">Voir le site <span>→</span></a>
+            </div>
+          </article>
+
+          <!-- AprilFord -->
+          <article class="project-card reveal reveal-delay-2">
+            <div class="project-mockup mock-ford">
+              <div class="mock-nav">
+                <div class="mock-logo"></div>
+                <div class="mock-nav-links"><span></span><span></span><span></span></div>
+              </div>
+              <div class="mock-hero">
+                <div class="mock-hero-content">
+                  <div class="mock-title"></div>
+                  <div class="mock-subtitle"></div>
+                  <div class="mock-btn"></div>
+                </div>
+              </div>
+              <div class="mock-stats">
+                <div class="mock-stat"></div>
+                <div class="mock-stat"></div>
+                <div class="mock-stat"></div>
+              </div>
+            </div>
+            <div class="project-overlay">
+              <span class="project-cat">Automobile &amp; Business</span>
+              <h3 class="project-name">aprilford.com</h3>
+              <a href="https://www.aprilford.com/" class="project-link">Voir le site <span>→</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         PRICING
+    ══════════════════════════════════════ -->
+    <section id="pricing">
+      <div class="container">
+        <div class="pricing-header reveal">
+          <span class="section-label">Tarifs</span>
+          <h2>Des formules claires, sans surprise — <span class="gold italic">Pas de frais cachés</span></h2>
+          <p>Choisissez la formule qui correspond à votre besoin. Tout est inclus.</p>
+        </div>
+
+        <div class="pricing-grid">
+
+          <!-- Essentiel -->
+          <div class="pricing-card reveal">
+            <span class="price-badge">Idéal pour débuter</span>
+            <h3 class="price-name">Formule Essentiel</h3>
+            <div class="price-from">À partir de</div>
+            <div class="price-amount">450€</div>
+            <div class="price-divider"></div>
+            <ul class="price-features">
+              <li>Site professionnel 1 page</li>
+              <li>Présentation de votre activité</li>
+              <li>Bouton appel / WhatsApp intégré</li>
+              <li>Formulaire de contact</li>
+              <li>Optimisation Google locale</li>
+              <li>Compatible mobile &amp; tablette</li>
+            </ul>
+            <a href="#contact" class="btn-pricing">Choisir cette formule</a>
+          </div>
+
+          <!-- Pro Local (featured) -->
+          <div class="pricing-card featured reveal reveal-delay-1">
+            <span class="price-badge">⭐ Le plus populaire</span>
+            <h3 class="price-name">Formule Pro Local</h3>
+            <div class="price-from">À partir de</div>
+            <div class="price-amount">850€</div>
+            <div class="price-divider"></div>
+            <ul class="price-features">
+              <li>Site vitrine jusqu'à 5 pages</li>
+              <li>Design 100% personnalisé</li>
+              <li>Boutons appel / WhatsApp sur toutes les pages</li>
+              <li>Google Maps + avis clients intégrés</li>
+              <li>Référencement local renforcé</li>
+              <li>Tout ce qui est inclus dans Essentiel</li>
+            </ul>
+            <a href="#contact" class="btn-pricing">Choisir cette formule</a>
+          </div>
+
+        </div>
+
+        <p class="pricing-note reveal">💬 Besoin d'un devis sur mesure ? <a href="#contact" class="gold">Contactez-nous
+            directement.</a></p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         WHY JOBIZZ
+    ══════════════════════════════════════ -->
+    <section id="why">
+      <div class="container">
+        <div class="why-header reveal">
+          <span class="section-label">Notre ADN</span>
+          <h2>Pourquoi des centaines de professionnels <span class="gold italic">nous font confiance</span></h2>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card reveal" data-num="01">
+            <span class="why-icon">🥇</span>
+            <h3>Prix qui cassent le marché</h3>
+            <p>Des tarifs transparents et imbattables, sans compromis sur la qualité.</p>
+          </div>
+          <div class="why-card reveal reveal-delay-1" data-num="02">
+            <span class="why-icon">⚡</span>
+            <h3>Livraison ultra-rapide</h3>
+            <p>Votre site livré selon vos délais. Pas de mois d'attente.</p>
+          </div>
+          <div class="why-card reveal reveal-delay-2" data-num="03">
+            <span class="why-icon">🔧</span>
+            <h3>Maintenance illimitée</h3>
+            <p>Modifications, mises à jour, corrections : inclus, sans frais cachés.</p>
+          </div>
+          <div class="why-card reveal reveal-delay-3" data-num="04">
+            <span class="why-icon">💬</span>
+            <h3>Réactivité &amp; Proximité</h3>
+            <p>On répond vite, on parle français, on vous accompagne à chaque étape.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         FAQ
+    ══════════════════════════════════════ -->
+    <section id="faq">
+      <div class="container">
+        <div class="faq-header reveal">
+          <span class="section-label">FAQ</span>
+          <h2>Vos questions, <span class="gold italic">nos réponses</span></h2>
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">
+              Combien de temps pour créer mon site ?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a" role="region">
+              <div class="faq-a-inner">Selon la formule, entre 3 et 10 jours ouvrés. Nous nous adaptons à vos délais et
+                vous tenons informé à chaque étape.</div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-delay-1">
+            <button class="faq-q" aria-expanded="false">
+              Que comprend exactement la maintenance illimitée ?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a" role="region">
+              <div class="faq-a-inner">Modifications de textes et photos, mises à jour techniques, corrections de bugs —
+                tout est inclus, sans frais supplémentaires, aussi longtemps que vous êtes client.</div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-delay-2">
+            <button class="faq-q" aria-expanded="false">
+              Mon site sera-t-il visible sur Google ?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a" role="region">
+              <div class="faq-a-inner">Oui. Chaque site est optimisé pour le référencement local dès la livraison :
+                balises SEO, Google Maps, mots-clés, vitesse de chargement et compatibilité mobile.</div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-delay-3">
+            <button class="faq-q" aria-expanded="false">
+              Je n'y connais rien en informatique, est-ce un problème ?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a" role="region">
+              <div class="faq-a-inner">Pas du tout ! On s'occupe de tout, de A à Z. Vous n'avez besoin d'aucune
+                connaissance technique. On vous explique tout simplement.</div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-delay-4">
+            <button class="faq-q" aria-expanded="false">
+              Comment se passe le paiement ?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a" role="region">
+              <div class="faq-a-inner">Vous recevez un devis détaillé. Après signature, un acompte de 40% est demandé au
+                démarrage, le solde à la livraison. Nous acceptons virement bancaire et PayPal.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CONTACT
+    ══════════════════════════════════════ -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-header reveal">
+          <span class="section-label">Contact</span>
+          <h2>Démarrons votre projet <span class="gold italic">ensemble</span></h2>
+          <p>Réponse garantie sous 24h ⚡</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Left — infos -->
+          <div class="contact-info reveal">
+            <div class="contact-intro">
+              <p>Une question, un projet ? N'hésitez pas à nous contacter. Notre équipe est disponible pour vous
+                accompagner dans la création de votre site web.</p>
+            </div>
+
+            <div class="contact-details">
+              <div class="contact-detail">
+                <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-detail-text"><a href="mailto:jobizz.agency@gmail.com">jobizz.agency@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
+                <div class="contact-detail-text"><a href="tel:+33695379023">+33 6 95 37 90 23</a></div>
+              </div>
+            </div>
+
+            <a href="https://wa.me/33695379023" target="_blank" rel="noopener noreferrer" class="whatsapp-btn"
+              aria-label="Nous contacter sur WhatsApp">
+              <i class="fab fa-whatsapp"></i> Discuter sur WhatsApp
+            </a>
+            <p class="whatsapp-note">Réponse immédiate sur WhatsApp</p>
+          </div>
+
+          <!-- Right — form -->
+          <form class="contact-form reveal reveal-delay-1" id="contact-form"
+            action="https://formsubmit.co/jobizz.agency@gmail.com" method="POST" novalidate>
+            <!-- FormSubmit config -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://jobizzagency.github.io/Website/">
+            <input type="hidden" name="_subject" value="Nouvelle demande de devis — JoBizz Agency">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nom complet *</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" placeholder="06 00 00 00 00">
+              </div>
+              <div class="form-group">
+                <label for="need">Votre besoin</label>
+                <select id="need" name="need">
+                  <option value="" disabled selected>Choisir une formule</option>
+                  <option value="Formule Essentiel">Formule Essentiel</option>
+                  <option value="Formule Pro Local">Formule Pro Local</option>
+                  <option value="Autre">Autre / Sur mesure</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" placeholder="Décrivez votre projet..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Envoyer ma demande</button>
+            <div class="form-success">✓ Merci ! Votre demande a bien été envoyée. Nous revenons vers vous sous 24h.
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#" class="footer-logo" aria-label="JoBizz Agency">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <polygon points="30,3 54,16 54,44 30,57 6,44 6,16" fill="none" stroke="#C9A84C" stroke-width="2.5" />
+              <path d="M34,17 L26,30 L32,30 L26,43" fill="none" stroke="#C9A84C" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <div class="footer-logo-text">
+              <span class="brand">JoBizz</span>
+              <span class="sub">Agency</span>
+            </div>
+          </a>
+          <p>JoBizz Agency — Votre présence web, notre priorité.</p>
+          <!--
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          -->
+        </div>
+
+        <!-- Links -->
+        <div class="footer-col">
+          <h4>Liens rapides</h4>
+          <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pricing">Formules</a></li>
+            <li><a href="#why">Notre ADN</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:jobizz.agency@gmail.com">jobizz.agency@gmail.com</a></li>
+            <li><a href="tel:+33695379023">+33 6 95 37 90 23</a></li>
+            <li><a href="https://wa.me/33695379023" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 JoBizz Agency. Tous droits réservés.</p>
+        <p class="footer-seo">Création de sites web professionnels pour TPE, artisans et PME en France</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/stats.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+  <script src="assets/js/testimonials.js"></script>
+  <script src="assets/js/faq.js"></script>
+  <script src="assets/js/contact.js"></script>
+
+</body>
+
+</html>

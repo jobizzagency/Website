@@ -1,0 +1,214 @@
+/* ═══════════════════════════════════════
+   PRICING.CSS — Section tarifs
+   Modifier les prix → index.html .price-amount
+   Modifier les features → index.html .price-features
+   Ajouter une formule → copier une .pricing-card
+═══════════════════════════════════════ */
+
+#pricing {
+    padding: var(--section-pad);
+    position: relative;
+}
+
+#pricing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-border), transparent);
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.pricing-header p {
+    max-width: 500px;
+    margin: 1rem auto 0;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+/* Card */
+.pricing-card {
+    background: var(--card);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 2.5rem 2rem;
+    position: relative;
+    transition: all var(--transition);
+    overflow: hidden;
+}
+
+.pricing-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0;
+    transition: opacity var(--transition);
+}
+
+.pricing-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--gold-border);
+}
+
+.pricing-card:hover::before {
+    opacity: 1;
+}
+
+/* Featured card */
+.pricing-card.featured {
+    border-color: var(--gold-border);
+    background: linear-gradient(135deg,
+            var(--card) 0%,
+            rgba(201, 168, 76, 0.04) 100%);
+}
+
+.pricing-card.featured::before {
+    opacity: 1;
+}
+
+/* Badge */
+.price-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.9rem;
+    background: var(--gold-pale);
+    border: 1px solid rgba(201, 168, 76, 0.2);
+    font-size: 0.75rem;
+    color: var(--gold);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.2rem;
+}
+
+.pricing-card.featured .price-badge {
+    background: var(--gold);
+    color: var(--black);
+    border-color: var(--gold);
+}
+
+/* Name & price */
+.price-name {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.price-from {
+    font-size: 0.8rem;
+    color: var(--grey);
+    font-weight: 500;
+}
+
+.price-amount {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 0.3rem;
+    line-height: 1.2;
+}
+
+.price-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold-border), transparent);
+    margin: 1.5rem 0;
+}
+
+/* Features */
+.price-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.price-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    color: var(--grey-light);
+    line-height: 1.5;
+}
+
+.price-features li::before {
+    content: '✦';
+    color: var(--gold);
+    font-size: 0.6rem;
+    margin-top: 0.35rem;
+    flex-shrink: 0;
+}
+
+/* CTA */
+.btn-pricing {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem 1.5rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1.5px solid var(--gold-border);
+    background: transparent;
+    color: var(--gold);
+    cursor: none;
+    transition: all var(--transition);
+    text-decoration: none;
+}
+
+.btn-pricing:hover {
+    background: var(--gold);
+    color: var(--black);
+    border-color: var(--gold);
+}
+
+.pricing-card.featured .btn-pricing {
+    background: var(--gold);
+    color: var(--black);
+    border-color: var(--gold);
+}
+
+.pricing-card.featured .btn-pricing:hover {
+    background: var(--gold-light);
+    border-color: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(201, 168, 76, 0.25);
+}
+
+/* Note */
+.pricing-note {
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 0.92rem;
+    color: var(--grey-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 440px;
+    }
+}

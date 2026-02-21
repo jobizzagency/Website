@@ -1,0 +1,155 @@
+/* ═══════════════════════════════════════
+   ANIMATIONS.CSS — Toutes les animations
+   Modifier la durée des reveals → .reveal transition
+   Désactiver toutes les animations →
+   @media (prefers-reduced-motion: reduce)
+═══════════════════════════════════════ */
+
+/* ── Reveal on scroll ──────────────────── */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-delay-1 {
+    transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+    transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+    transition-delay: 0.3s;
+}
+
+.reveal-delay-4 {
+    transition-delay: 0.4s;
+}
+
+/* ── Hero entrance ─────────────────────── */
+.hero-anim-1 {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade-up 0.7s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.hero-anim-2 {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade-up 0.7s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.hero-anim-3 {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade-up 0.7s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.hero-anim-4 {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade-up 0.7s ease forwards;
+    animation-delay: 0.8s;
+}
+
+.hero-anim-5 {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fade-up 0.7s ease forwards;
+    animation-delay: 1s;
+}
+
+/* ── Keyframes ─────────────────────────── */
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float-particle {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.6;
+    }
+
+    90% {
+        opacity: 0.1;
+    }
+
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+@keyframes scroll-pulse {
+
+    0%,
+    100% {
+        opacity: 0.3;
+        transform: scaleY(0.6);
+        transform-origin: top;
+    }
+
+    50% {
+        opacity: 1;
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+}
+
+/* ── Reduced motion ────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .hero-anim-1,
+    .hero-anim-2,
+    .hero-anim-3,
+    .hero-anim-4,
+    .hero-anim-5 {
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
+
+    .particle {
+        animation: none !important;
+        display: none;
+    }
+
+    .scroll-line {
+        animation: none;
+    }
+
+    .testimonials-track {
+        transition: none;
+    }
+
+    .faq-a {
+        transition: none;
+    }
+}
